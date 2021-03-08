@@ -1,0 +1,779 @@
+<!DOCTYPE html >
+<html style=" margin: 0!important;
+padding: 0!important; scroll-behavior: smooth!important;">
+
+<head>
+    <title>Radio NITroz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logo/rnlogowhite.png" type="image">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/css-doodle@0.14.2/css-doodle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,600&amp;display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtk Ktu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/usm/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script>
+        function hideLoader() {
+
+            $('#loading').addClass("hide");
+        }
+
+        setTimeout(hideLoader, 2 * 1000);
+        $(window).on('load', function() {
+
+            $(window).scrollTop(0);
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/958e55d843.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #203647; text-decoration-color: #203647;">
+    <div id="loading"></div>
+    <css-doodle grid="5" class="doodle">
+        :doodle { @grid: 5/ 100vmax; } background: @pick(#ffadad, #FDD835, #b3fffb, #fff, #a0c4ff, #bdb2ff, #9bf6ff); opacity: @r(.9); clip-path: polygon( @rand(50%) 0, 50% @rand(70%), 0 @rand(100%) ); animation: test infinite @r(100s, 150s) linear; @keyframes
+        test { 0% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(@r(-500%, 1000%), @r(-500%, 1000%), 0); } 100% { transform: translate3d(0, 0, 0); } }
+    </css-doodle>
+    <section id="title">
+        <div class="card border-0">
+            <img class="img-fluid w-100 p-0" src="./images/bg/rn.jpg">
+            <div class="card-body text-white rgba-black-strong  p-2">
+                RADIO NITROZ
+            </div>
+        </div>
+
+        <div class="container-fluid " style="background: url(Renderfinal.mp4);  background-repeat: no-repeat;  background-position:center!important;width: 100%; ">
+        </div>
+        <nav id="overlay" class="navbar  navbar-dark navbar-custom navbar-default fixed-top black navbar-toggleable-md ">
+
+            <a class="navbar-brand navbar-custom rnlogo page-scroll"><img class="logo" src="images/logo/rnlogowhite.png" style="height:80px; width:auto; "></a>
+
+            <button id="clicker" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="my-2 mx-2 close" style="color :#fff!important "><i class="fas fa-times"
+            style="color :#fff!important "></i></span>
+        <span class="navbar-toggler-icon "> <i class="fas fa-bars" style=" color:#fff; font-size:28px;"></i></span>
+      </button>
+            <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+                <ul class="navbar-nav navbar-custom ml-auto ">
+                    <li class="nav-item active logo" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link page-scroll brand-logo" style="color: #b3fffb!important; font-size: 2em!important;" href="#about">ABOUT US</a>
+
+                    </li>
+                    <li class="nav-item active logo" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link page-scroll brand-logo" href="#events" style="color: #b3fffb!important; font-size: 2em!important;">EVENTS</a>
+
+                    </li>
+                    <li class="nav-item active logo" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link page-scroll brand-logo" href="#Team" style="color: #b3fffb!important; font-size: 2em!important;">TEAM</a>
+
+                    </li>
+                    <li class="nav-item active logo" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link page-scroll brand-logo" href="https://www.facebook.com/radio.nitroz.nitdgp"><i
+                class="fab fa-facebook-f" style="font-size: 2em;   color:#b3fffb "></i></a></a>
+
+                    </li>
+                    <li class="nav-item active logo" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link page-scroll brand-logo" href="https://instagram.com/radionitroz_nitdgp?igshid=1pu6b8o84z66h"><i class="fab fa-instagram"
+                style="font-size: 2em; color:#b3fffb"></i></a></a>
+
+                    </li>
+                    <li class="nav-item active logo" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link page-scroll brand-logo" href="mailto:radionitroz.nitdgp@gmail.com "><i
+                class="fas fa-envelope" style="font-size: 2em; color:#b3fffb"></i></href=></a>
+
+                    </li>
+                    <li class="nav-item active logo" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link page-scroll brand-logo" href="https://www.youtube.com/channel/UCSENXkh5yNkcGiQez7y1OwA"><i class="fab fa-youtube"
+                style="font-size: 2em; color:#b3fffb"></i></href=></a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+        </div>
+    </section>
+    <!-- <section id="aboutus">
+    
+      <h1 style="text-align: center;">ABOUT US</h1>
+      
+  </section> -->
+    <section id="about">
+
+        <div class="row">
+            <div class="col gradient-border about">
+
+                <h1 style="text-align: center; color:black;"><b>ABOUT US</b></h1>
+                <p> We, the People of RADIO NITroz of NIT Durgapur, strive to make a difference in the hectic life of college by bringing fun events and help people learn better with a calm mind because “Life is to live”.RADIO NITroz was formed in the year
+                    2006 by our brilliant seniors. RADIO NITroz was the 3rd successful LAN/Internet based radio among all IITs and NITs. We carry out different events throughout the year, enthralling people with Joie de vivre. Our Jukebox event arena
+                    during AAROHAN (Techno - Management Fest of NIT Durgapur) is a much sought attraction of the fest . We also have a bunch of events during RECSTACY (Now NITYAMINI) which is the Cultural Fest of NIT Durgapur. We believe to start small
+                    but to work as a team to make sure that every event is a milestone and we leave no stone unturned in the process.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col gradient-border who">
+                <h1 style="text-align: center; color:black;"><b>WHO WE ARE</b></h1>
+                <p> We are a bunch of icycool people who take fun very seriously, we are an incubation centre for ideas that could only be done here and should not be done without supervision (Disclaimer).The basic intention of the formation of this club
+                    or better say family is to communicate with the "Aam Janta" of the college, be a college media and fill the campus with our bakar and fun. we strive to find out our true potential . We work on the motto to make life a bit easy and
+                    fun. We have been very popular for our radio shows on LAN and the Live Dedication. There was a time when everyone used to tune into Radio Nitroz using VLC and tell us whom they want to dedicate songs and messages if any. It was AMAZING
+                    to be loved by everyone.For this, we carry out different events throughout the year, enthrilling people with Joie de vivre. Our JUKEBOX event during AAROHAN (Techno - Management Fest of NIT Durgapur) is so attractive among students.
+                    We also have a lot of events during RECSTACY (Cultural Fest of NIT Durgapur) in which Mr. & Ms. RECSTACY is most popular. We work as a team to make sure that every event is a milestone. Our Social outreach has grown a lot for a variety
+                    of exciting events.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="events">
+        <div class="row">
+            <div class="col gradient-border event-div">
+                <h1 style="text-align: center; color:black;"><b>EVENTS</b></h1>
+                <p> We do whatever we like, no strings attached ,we question the question “What we do” itself for the answer and the question replies us with new answers every year. We make prank videos, we make Success stories videos, we make crazy events
+                    at the Fests, we do matki fod ,we do confessions and much more, we also “Voice it out” to the universe that yes we live in odd times but yet life is even.
+                </p>
+
+                <div id="event-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li class="prev" data-target="#event-carousel" data-slide-to="0" class="active"></li>
+                        <li class="next" data-target="#event-carousel" data-slide-to="1"></li>
+                        <li class="next" data-target="#event-carousel" data-slide-to="2"></li>
+                        <li class="next" data-target="#event-carousel" data-slide-to="3"></li>
+                        <li class="next" data-target="#event-carousel" data-slide-to="4"></li>
+                        <li class="next" data-target="#event-carousel" data-slide-to="5"></li>
+                        <li class="next" data-target="#event-carousel" data-slide-to="6"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-toggle="modal" data-target="#fresher">
+
+
+
+                            <h1> FRESHERS' INTRO 2021 </h1>
+                            <p style="color:#fff!important ; ">We conducted Online Freshers Introduction for the 2024 batch.</p>
+                            <img src="images/carousel/fresherintro.jpg" alt="" class="tt-img">
+                        </div>
+                        <div class="carousel-item">
+
+                            <h1> SUCCESS STORIES </h1>
+                            <p style="color:#fff!important ; "> Here we interview the students with notable achievements in his/her field of interest. We believe that students can connect easily to those of their age group and therefore the journey of one of them SUCCESS STORIES has become
+                                a very popular and is inspiring the lot.</p>
+                            <img class="tt-img" src="images/carousel/ss7.jpg" alt="">
+                        </div>
+
+
+                        <div class="carousel-item">
+
+                            <h1> MR. & MISS NIT DGP </h1>
+                            <p style="color:#fff!important ; "> MR & MISS NIT-DGP is one of the the most popular event during RECSTACY (NIT Durgapur's Cultural Fest) where people participate in huge numbers with extravagant enthusiasm. Winners of this event are selected through various
+                                fun rounds.</p>
+                            <img class="tt-img" src="images/events/nitdgp.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+
+                            <h1> MATKI FOD </h1>
+                            <p style="color:#fff!important ; "> MATKI FOD was a fun and interactive event conducted on the auspicious occasion of the festival of Janmashtami with a thought to relive the famous ‘matki fod’ event held nationwide in the college campus on Janmashtami with participation
+                                of around 300+ college students.</p>
+                            <img class="tt-img" src="images/events/matkifod.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+
+                            <h1> SHAAM-E-NOOR </h1>
+                            <p style="color:#fff!important ; "> Light is a symbol of unity, hope and power. This year’s SHAAM-E-NOOR was on different hues of Diwali celebration.Flowers and rangolis, diyas and fairylights, crackers and fireworks, celebration and happiness all around. The
+                                festival of deepam is here and we can't resist ourselves from filling our souls with the brightness hovered upon. Pictures, selfies, posts and uploading stories becomes an integral part around the each decorated corners
+                                during Diwali so we posted participant’s entries on our Instagram and FB page. SHAAM-E-NOOR is well received by the participants. A total of 130 Entries across 58 Institutions were made for 2nd edition of SHAAM-E-NOOR.</p>
+                            <img class="tt-img" src="images/events/shaamenoor.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+
+                            <h1> RED FM COLLAB </h1>
+                            <p style="color:#fff!important ; "> RADIO NITroz in collaboration with RED FM 93.5 had organised "College Ke Tashanbaaz", an offline event where the students were allowed to showcase their talents in any field of interest like dancing, singing, comedy, poetry,
+                                etc. The event was very successful with a huge participation.
+                            </p>
+                            <img class="tt-img" src="images/events/redfmcollab.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+
+                            <h1> VIDEO KAHINKA </h1>
+                            <p style="color:#fff!important ; "> VIDEO KAHINKA is one such venture where you can find these humorous videos. In VIDEO KAHINKA we tried knowing the basic public opinion about various stuffs related to our college, and guess what, we came across very interesting
+                                answers!!
+                            </p>
+                            <img class="tt-img" src="images/events/videokahinka.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#event-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#event-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <div class="extra-events">
+                    <h1 style="margin-bottom: 18px!important;">Other Ventures</h1>
+                    <div class="row event-row">
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/jukebox.jpg" class="card-img-top" alt="...">
+                                <h3>RN JUKEBOX</h3>
+                                <p>RN JUKEBOX is offline platform for fun activities in AAROHAN where people participate in huge numbers with extravagant enthusiasm. We have in store for participants The Spinning Wheel, Paper Dance, Open Mic, Tug of War
+                                    and many more. Students always look up to RADIO NITroz in college fests, for their fun events.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/kholedil.jpg" class="card-img-top" alt="...">
+                                <h3>KHOL-E-DIL</h3>
+                                <p>KHOL-E-DIL gives everyone a platform where they can confess any feelings that was untold due to this stupid pandemic, any unsaid goodbyes, any unsaid sorry if they by chance hurt someone, just anything they want that person
+                                    to know. This event is still going on our Official Facebook page of RADIO NITroz with 300+ entries!</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/prank.jpg" class="card-img-top" alt="...">
+                                <h3>PRANKS</h3>
+                                <p>This year we made a funny short PRANK VIDEO to spice things up a little. The video was based on the concept of electric shock and was shot outside the college campus with live audience, performed on common folks of nearby
+                                    areas.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/funtastic.jpg" class="card-img-top" alt="...">
+                                <h3>FUNTASTIC</h3>
+                                <p>It was a fun and t-shirt painting event especially for the freshers where they have to paint their favourite one's t-shirts. This event was very successful with 100+ participants.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row event-row">
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/moviemystics.jpg" class="card-img-top" alt="...">
+                                <h3>MOVIE MYSTICS</h3>
+                                <p>ONLINE QUIZ ON MOVIES</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/memerantine.jpg" class="card-img-top" alt="...">
+                                <h3>MEMERANTINE</h3>
+                                <p>Memes are one of our most vital survival tools during this quarantine as they are hilarious and savage at the same time so Radio NITroz conduct an event "MEME-RaN-TINE" where participants had a chance to showoff their awesome
+                                    sense of humor by making memes on given list of places in the college. The event was very successful with 80+ participation.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/youtube.jpg" class="card-img-top" alt="...">
+                                <h3>SHORT FILMS</h3>
+                                <p>We have also made short films and a few You Tube series showcasing the talents of our mates.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow p-3 mb-5 rounded">
+                                <img src="images/events/dilki.jpg" class="card-img-top" alt="...">
+                                <h3>DIL KI EK DIARY SE</h3>
+                                <p>The most loved radio show of ours, ‘Dil Ki Ek Diary Se’ has also been made available in the form of videos in our channel.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Team">
+
+        <div class="container teammembers gradient-border col" style="height: 800px;">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 style=" padding-top: 12px!important;"><b>OUR TEAM</b></h1>
+                    <br>
+                </div>
+            </div>
+
+
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item pill"><a class=" nav-link active " data-toggle="pill" href="#final" style="font-size: large; color: #fff;">FINAL YEARS</a></li>
+                <li class="nav-item pill"><a class="nav-link  border border-light" data-toggle="pill" href="#third" style="font-size: large; color: #fff;">THIRD YEARS</a></li>
+                <li class="nav-item pill"><a class="nav-link  " data-toggle="pill" href="#second" style="font-size: large; color: #fff;">SECOND YEARS</a></li>
+                <li class="nav-item pill"><a class="nav-link  " data-toggle="pill" href="#first" style="font-size: large; color: #fff;">FIRST YEARS</a></li>
+            </ul>
+            <br>
+            <div class="tab-content">
+                <div id="final" class="tab-pane fade show active ">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/kuldeep.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:ks.17u10637@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9920276407"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Kuldeep Suthar</b><span style="display: block;">President</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/puja.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:py.17u10057@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9057243740"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Pooja Yadav</b><span style="display: block;">Vice President</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/pratik.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:pb.17u10750@btech.nitgdp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8905726407"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Pratik Biswas</b><span style="display: block;">General Secetary</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/dogra.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:gd.17u10599@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8918353587"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Gourav Dogra</b><span style="display: block;">Convenor</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/gora.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:kg.17u10412@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8209432816"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Kritika Gora</b><span style="display: block;">Event Head</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/sourav.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:17u10588@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9679465006"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Sourav Das</b><span style="display: block;">Tech Head</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/ashish.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:ashishkp984@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8001662850"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Ashish Kumar</b><span style="display: block;">Conflict Resolution</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/amit.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:amitd1201@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7606022899"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Amit Dalai</b><span style="display: block;">Event Management Head</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="third" class="tab-pane fade">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/ankita.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:as18u10106@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9635466301"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Ankita Singha</b><span style="display: block;">Treasurer</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/arjya.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:py.17u10057@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9057243740"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Arjya Singh Roy</b><span style="display: block;">RJ Video Editor</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/maity.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:arjya24022001@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7501400869"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Sayantan Maity</b><span style="display: block;">Graphic Designer</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/gourab.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:gm18u10509@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7439505641"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Gourab Mondal</b><span style="display: block;">VJ</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/kiran.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:kiranrox2000@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7402282019"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Kiran P Abraham</b><span style="display: block;">VJ Graphic Designer</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/pavan.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:pp.pavanpreetham@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9381439311"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Pavan Preetham</b><span style="display: block;">Graphic designer</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="second" class="tab-pane fade">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/vp.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:vp.19u10233@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9831417775"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Vedang Pancholi</b><span style="display: block;">Web Developer Photographer <br>Event
+                  Management</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/pragya.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:pragyak987@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7685839138"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Pragya Kumari</b><span style="display: block;">Photographer Event Management RJ</span></h4>
+                        </div>
+                    </div>
+                    <div id="second" class="card" style="width: 18rem;">
+                        <img src="./images/members/ayush.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:nikkuayush@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:6397754301"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Ayush Chaudhary</b><span style="display: block;">RJ Event Management</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/sonali.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:sonalisah1408@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9883494410"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Sonali Sah</b><span style="display: block;">RJ</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/aditya.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:adgupta594@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:6289546144"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Aditya Gupta</b><span style="display: block;">RJ</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/aditi.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:10aditigedam10@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:6260378221"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Aditi Gedam</b><span style="display: block;">RJ</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Ayush Singh.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:ayushbhu17singh@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8765615845"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Ayush Singh</b><span style="display: block;">Content writing</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="first" class="tab-pane fade">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Debapriya Saha.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:sahadebapriya14@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9432062074"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Debapriya Saha</b><span style="display: block;">Content writing and Event management </span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Akshay A Baiju.png" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:akshaydgp2015@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9475738842"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Akshay A Baiju</b><span style="display: block;">Event management, Video Editor</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Pushpal Ghodaskar.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:pushpalghodaskar@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8055628645"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Pushpal Ghodaskar</b><span style="display: block;">Event Manager and Rj</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/sankalp mishra_.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:sm.20u10580@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7439122419"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Sankalp Mishra</b><span style="display: block;">Event management</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Vivan Jha-1.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:vj.20U10623@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8528494334"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Vivan Jha</b><span style="display: block;">Video editor</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/yenamandra sai akshitha.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:ysa.20u10654@btech.nitdgp.ac.in"><i
+                    class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:6301969879"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Sai Akshitha Yenamandra</b><span style="display: block;">Rj/vj and content writing</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Ashish Raj.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:ashishrajsingh631@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7488431604"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Ashish Raj</b><span style="display: block;">Graphic designer</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Bihan saha.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:bs.20u10782@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7478488502"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Bihan Saha</b><span style="display: block;">RJ/VJ,content writer,management</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Priyanshu Burman.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:priyanshuburman1234@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7339778852"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Priyanshu Burman</b><span style="display: block;">Graphic Designing, Event Management, Content
+                  Writing</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Arindam Mandal.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:arindam.140102@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7477776326"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Arindam Mandal</b><span style="display: block;">Photographer</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Ramashis Bhattacharya.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:rockrama44@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7063074658"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Ramashis bhattacharya</b><span style="display: block;">Event manager</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Shubham paul.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:sp.20u10050@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8942831136"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Subham Paul</b><span style="display: block;">Graphic designer</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Rajhrit Banerjee.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:rajhritbanerjee@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:6291371804"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Rajhrit Banerjee</b><span style="display: block;">Event Management and Content Writing</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Drishita Nag.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:dri9434539665@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:7797061920"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Drishita Nag</b><span style="display: block;">Event management</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Dhiraj Kumar.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:dheer222002@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9007269001"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Dhiraj kumar</b><span style="display: block;">Photographer, Video editing, Event management</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/peddinti ruchitha.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:pr.20u10266@btech.nitdgp.ac.in"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9981599111"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Ruchitha Peddinti</b><span style="display: block;">Content writing and management</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Amool kumar.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:amoolkumar10@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9352095586"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Amool Kuldiya</b><span style="display: block;">Web development</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Kalyan chaubey.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:kalyanchoubey98@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9733653994"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Kalyan Kumar Choubey</b><span style="display: block;">Event manager , Content writer</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Riya Chowdhury.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:riya.chow21@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:9836081267"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Riya Chowdhury</b><span style="display: block;">VIDEO EDITOR</span></h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/members/Shivanshu.jpg" class="img-responsive rounded-circle" alt="" style="height:150px; width:150px; border-radius: 100%;border: 6px solid #9affff;">
+                        <div class="team-member">
+                            <ul class="list-inline social-buttons">
+                                <a class="social" href="mailto:shivanshubm@gmail.com"><i class="fa fa-envelope social"></i></a>
+                                <a class="social" href="tel:8618571654"><i class="fa fa-phone social"></i></a>
+                            </ul>
+                            <h4><b>Shivanshu Basu Mallick</b><span style="display: block;">Rj Vj</span></h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="footer" style="text-align: center!important;;">
+        <p class="cpy" style="color: wheat; font-size: small;">© Copyright 2021 Radio Nitrozz NITDGP <span style="display: block;">© All Rights Reserved</span> </p>
+
+
+    </section>
+
+
+</body>
+
+</html>

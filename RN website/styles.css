@@ -1,0 +1,432 @@
+html {
+    scroll-behavior: smooth!important;
+    scroll-behavior: smooth;
+    margin: 0!important;
+    padding: 0!important;
+    overflow-y: scroll;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth!important;
+}
+
+.bg>img {
+    max-width: 100%!important;
+    width: auto;
+    max-height: 100%!important;
+    height: auto!important;
+    position: relative;
+}
+
+.bg>.card {
+    max-width: 100%!important;
+    width: auto;
+    max-height: 100%!important;
+    height: auto!important;
+    position: relative;
+}
+
+
+/* #overlay {
+ 
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+} */
+
+.card>.card-body {
+    height: 20%;
+    text-align: center;
+    font-size: 6vw;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+    display: none;
+}
+
+img .logo {
+    max-width: 100%;
+    height: 400px;
+}
+
+p {
+    vertical-align: middle;
+    font-size: 0.95rem!important;
+    font-family: 'Alegyra Sans', 'Alegyra Sans MT', Calibri, sans-serif;
+    text-align: justify;
+    color: white!important;
+    padding: 30px;
+}
+
+.carousel-item p {
+    font-size: 0.95rem!important;
+    background-color: rgba(0, 124, 199, 0.3);
+    border-radius: 16px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif!important;
+    color: #D9b08c!important;
+    padding-bottom: 10px;
+    background-color: rgba(77, 168, 218, 0.4)!important;
+    display: inline-flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #fff!important;
+    border-radius: 10px;
+    font-size: 2rem!important;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.6rem!important;
+    color: #fff!important;
+}
+
+.gradient-border>h1 {
+    padding-top: 12px!important;
+}
+
+.gradient-border.teammembers {
+    height: auto!important;
+}
+
+h4 {
+    font-size: 10px!important;
+    color: #c2ffff!important;
+    font-family: 'Architects Daughter', cursive!important;
+    font-size: 17px!important;
+    padding-bottom: 15px;
+}
+
+#title {
+    font-family: 'Orbitron', sans-serif;
+    color: #4DA8DA!important;
+}
+
+.navbar-nav>li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-custom {
+    background-color: transparent;
+}
+
+
+/* .responsive
+{
+  width: 80%;
+  height: auto;
+} */
+
+.carousel .carousel-item {
+    height: 120%;
+    padding-bottom: 50px;
+}
+
+.carousel-item>h1 {
+    display: inline-block;
+    color: #fff!important;
+    background-color: #EEFBFB;
+    border-radius: 16px;
+}
+
+.carousel-item>p {
+    text-align: center!important;
+}
+
+.carousel-item img {
+    /* position:absolute; */
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 500px;
+    /* max-height: 100%; */
+    height: auto;
+    align-items: center;
+    border: 8px solid #EEFBFB;
+    border-radius: 3%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#eventcarousel {
+    text-align: center;
+    background-color: #2C3531;
+    color: #fff;
+}
+
+.navbar-toggler>.close {
+    display: inline;
+    font-family: "Times New Roman", serif!important;
+    color: #ffdec2!important;
+}
+
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display: none;
+}
+
+.nav-item .logo {
+    font-size: 1.5vw!important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.doodle {
+    position: fixed;
+    z-index: -1;
+}
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover {
+    background-color: white;
+}
+
+.gradient-border {
+    /* min-height: 100px;
+overflow: hidden; */
+    width: 90%;
+    height: 100%;
+    margin: 20px 10px 20px 10px;
+    padding: 10px!important;
+    text-align: center;
+    border-radius: 1rem;
+    align-items: center;
+    font-size: 2vw;
+    border-radius: 2rem;
+    background-color: #fff -10%;
+    background: rgba(18, 35, 46, 0.8);
+    backdrop-filter: blur(7px)
+}
+
+.gradient-border.teammembers {
+    height: 700px;
+}
+
+.nav-pills>li.nav-item>a.active,
+.nav-pills>li.nav-item>a:focus,
+.nav-pills>li.nav-item>a:hover {
+    background-color: rgba(77, 168, 218, 0.4)!important;
+    color: #fff!important;
+}
+
+.social {
+    font-size: 20px;
+    color: #9affff;
+}
+
+a.social {
+    padding-top: 0px!important;
+    margin-left: 8px!important;
+    align-items: center!important;
+}
+
+.social-buttons {
+    align-items: center!important;
+}
+
+p.position {
+    margin-bottom: 10px!important;
+}
+
+.brand-logo {
+    color: rgb(199, 199, 199);
+    white-space: nowrap;
+    text-shadow: 0 0 1px rgb(194, 194, 194), 0 0 2px rgb(199, 192, 192), 0 0 6px #292736, 0 0 8px #292736, 0 0 10px #292736, 0 0 12px #292736, 0 0 14px #292736;
+    animation: glow .59s infinite alternate;
+}
+
+
+/* Animation as suggested by Ismail Ghallou */
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 4px #a3ffff, 0 0 8px #a3ffff, 0 0 12px #a3ffff, 0 0 16px #a3ffff, 0 0 20px #a3ffff, 0 0 24px #a3ffff, 0 0 28px #a3ffff;
+    }
+}
+
+.brand-logo {
+    text-shadow: 0 0 1px rgb(199, 198, 198), 0 0 2px rgb(199, 196, 196), 0 0 6px #292736, 0 0 8px #292736, 0 0 10px #292736, 0 0 12px #292736, 0 0 14px #292736;
+    animation: glow .59s infinite alternate;
+}
+
+@media(max-width:700px) {
+    /* p
+  {
+    font-size: 8px!important;
+  } */
+    /* .about.who
+  {
+    height:250px!important;
+  } */
+    /* .gradient-border.event-div
+  {
+    height:550px!important;
+  } */
+    .img-responsive {
+        height: 6rem!important;
+        width: 6rem!important;
+    }
+    .teammembers {
+        height: 60rem!important;
+    }
+    #final>.card {
+        width: 7rem!important;
+        height: 70%!important;
+    }
+    #third>.card {
+        width: 10rem!important;
+        height: 90%!important;
+    }
+    #second>.card {
+        width: 10rem!important;
+        height: 90%!important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: 75%!important;
+}
+
+.tab-pane {
+    flex-wrap: wrap!important;
+    display: flex!important;
+    justify-content: center!important;
+}
+
+.card.shadow {
+    background-color: transparent!important;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-sizing: inherit;
+    width: 16rem;
+    height: 100%;
+    align-items: center!important;
+    border: none!important;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card.shadow img {
+    justify-content: center!important;
+    width: 200px;
+    height: 200px;
+}
+
+.tab-content>.tab-pane:not(.active),
+.pill-content>.pill-pane:not(.active) {
+    display: block;
+    height: 0;
+    overflow-y: hidden;
+}
+
+p.cpy {
+    text-align: center;
+}
+
+.card>p {
+    color: #fff!important;
+}
+
+.event-row .card {
+    height: 90% !important;
+    color: #fff!important;
+    background-color: rgba(0, 124, 199, 0.3)!important;
+}
+
+.event-row .col {
+    display: flex;
+}
+
+.tab-pane>.card {
+    background-color: transparent!important;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-sizing: inherit;
+    width: 16rem;
+    height: 100%;
+    align-items: center!important;
+    border: none!important;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.glass {
+    position: relative;
+}
+
+.glass::before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+}
+
+.glass::before {
+    /* background-image: url('path/to/image.jpg'); Actual image for this demo is a data-uri, see below */
+    /* Prefix free isn't picking up this one */
+    -webkit-filter: url('#blur');
+    filter: url('#blur');
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.glass {
+    background-color: white;
+}
+
+
+/* transformations */
+
+.glass.down {
+    transform: translateY(100%) translateY(-5em) translateZ(0);
+}
+
+.glass.down::before {
+    transform: translateY(-100%) translateY(5em) translateZ(0);
+}
+
+.glass.up,
+.glass.up::before {
+    transform: translateY(0) translateZ(0);
+}
+
+
+/* transitions */
+
+.glass,
+.glass::before {
+    transition: transform 0.5s ease-out;
+}
+
+transition: transform 0.5s ease-out;
+
+}
