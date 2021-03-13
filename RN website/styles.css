@@ -354,9 +354,10 @@ p.cpy {
 }
 
 .event-row .card {
-    height: 90% !important;
+    height: 16.2rem;
     color: #fff!important;
     background-color: rgba(0, 124, 199, 0.3)!important;
+    margin-top: 40px;
 }
 
 .event-row .col {

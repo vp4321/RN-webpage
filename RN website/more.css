@@ -1,0 +1,213 @@
+body{
+    font-family: 'Architects Daughter', cursive!important;
+}
+
+.navbar{
+    opacity: 0.98;
+    font-family: 'Architects Daughter', cursive!important;
+}
+
+section{
+    font-family: 'Architects Daughter', cursive!important;
+}
+.navbar-toggler{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler span{
+    padding: 2px 15px;
+    margin: 2px 0px;
+   
+    background: white;
+    border-radius: 4px;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    position: absolute;
+    top: 18rem;
+}
+
+.modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0,0,0.5);
+    z-index: 2000;
+    
+    display: none;
+    text-align: center;
+    animation: modal-open .5s;
+}
+
+.modal-content{
+    background: #fff;
+    margin-top: 55rem;
+    width: 1470px;
+    /* min-height: 100%; */
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 34px;
+    border-radius: 4px;
+    z-index: inherit;
+}
+
+
+.modal-header{
+    font-weight: 500;
+    padding: 10px 0px;
+    font-size: 26px;
+}
+
+.modal-header .modal-close{
+    float: right;
+    font-size: 20px;
+    background: #efefef;
+    border: 0px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    /* border-radius: 50%; */
+}
+
+.modal-body{
+    color: #7b7b7b;
+    padding: 15px 10px;
+    text-align: justify;
+    align-items: center;
+    margin: 20px auto;
+    display: flex;
+}
+
+.modal-body img{
+    width: 300px;
+    height: 400px;
+    /* margin-left: 45%;
+    margin-right: 45%; */
+    align-items: center;
+}
+.modal-body div{
+    padding: 20px 15px;
+}
+
+.maingroup{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.group1 , .group2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.group2 textarea{
+    margin: 10px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    box-shadow: -4px -4px 10px rgb(255 255 255), inset 4px 4px 10px rgb(0 0 0 / 5%), inset -4px -4px 10px rgb(255 255 255), inset 4px 4px 10px rgb(0 0 0 / 5%);
+}
+.group1 input{
+    margin: 10px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    box-shadow: -4px -4px 10px rgb(255 255 255), inset 4px 4px 10px rgb(0 0 0 / 5%), inset -4px -4px 10px rgb(255 255 255), inset 4px 4px 10px rgb(0 0 0 / 5%);
+}
+
+.social-media{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+
+.social-media a{
+    margin: 0px 20px;
+}
+
+@keyframes modal-open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+@media only screen and (min-width: 1100px) {
+    .navbar-nav {
+        position: absolute;
+        right: 10px;
+    }
+  }
+
+
+@media only screen and (max-width: 1100px) {
+    .modal-content{
+        width: 80%;
+        margin-top: 80rem;
+        font-size: 18px;
+    }
+    .modal-body{
+        width: auto;
+    }
+  }
+
+@media only screen and (max-width: 770px) {
+    .maingroup{
+        flex-direction: column;
+        align-items: center;
+    }
+    .group1 , .group2{
+        width: auto;
+    }
+    .carousel-control-next-icon ,.carousel-control-prev-icon{
+        display: none;
+    }
+    .modal-content{
+        width: 80%;
+        font-size: 18px;
+    }
+    .modal-body{
+        width: auto;
+        flex-direction: column;
+    }
+    
+  }
+
+
+@media only screen and (max-width: 450px){
+    .KHOL-E-DIL{
+        margin-top: 75rem;
+    }
+    .PRANKS{
+        margin-top: 97rem;
+    }
+    .FUNTASTIC{
+        margin-top: 119rem;
+    }
+    .MOVIE-MYSTICS,.MEMERANTINE{
+        margin-top: 141rem;
+    }
+    .DIL-KI-EK-DIARY-SE,.SHORT-FILMS{
+        margin-top: 185rem;
+    }
+    .modal-body img{
+        width: 200px;
+        height: 300px;
+    }
+}
