@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Hero Slider With Bootstrap 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Architects Daughter', cursive!important;
+  
+}
+body {
+  background: #eee;
+  min-height: 100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}  
+#carousel .carousel-item.fresherintro{
+  background-image:url("images/carousel/fresherintro.jpg");
+}
+#carousel .carousel-item.ss7{
+  background-image:url("images/carousel/ss7.jpg");
+}
+#carousel .carousel-item.nitdgp{
+  background-image:url("images/events/nitdgp.jpg");
+}
+#carousel .carousel-item.matkifod{
+  background-image:url("images/events/matkifod.jpg");
+}
+#carousel .carousel-item.shaamenoor{
+  background-image:url("images/events/shaamenoor.jpg");
+}
+#carousel .carousel-item.redfmcollab{
+  background-image:url("images/events/redfmcollab.jpg");
+}
+#carousel .carousel-item.videokahinka{
+  background-image:url("images/events/videokahinka.jpg");
+}
+#carousel .carousel-item{
+  height:100vh;
+  width:100%;
+  min-height:350px;
+  background:no-repeat center center scroll;
+  background-size:cover;
+}
+#carousel .carousel-inner .carousel-item{
+  transition:-webkit-transform 2s ease;
+  transition:transform 2s ease;
+  transition:transform 2s ease, -webkit-transform 2s ease;
+}
+#carousel .carousel-item .caption{
+  background:rgba(0,0,0,0.5);
+  padding:40px;
+  color:white;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+#carousel .caption h2{
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+#carousel .caption p{
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  /* font-size: 16px; */
+  text-align: justify;
+}
+
+#carousel .caption a{
+  animation-duration: 1s;
+  animation-delay: 2.4s;
+}
+.delicious-btn{
+  display: inline-block;
+  min-width:160px;
+  height:60px;
+  color:#fff;
+  border:none;
+  border-left:3px solid #1c8314;
+  border-radius: 0;
+  padding:0 30px;
+  font-size:16px;
+  line-height:58px;
+  font-weight:600;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: capitalize;
+  background:#40ba37;
+}
+.delicious-btn:hover,
+.delicious-btn:active,
+.delicious-btn:focus{
+  font-size:16px;
+  font-weight: 600;
+  color:#fff;
+  background:#1c8314;
+  border-color:#40ba37
+}
+
+@media only screen and (max-width: 400px) {
+  #carousel .caption p{
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  font-size: 12px!important;
+}
+#carousel .carousel-item{
+  height:100vh;
+  width:100%;
+  min-height:400px;
+  background:no-repeat center center scroll;
+  background-size:cover;
+}
+#sizechange{
+  font-size: 12px;
+}
+}
+
+  
+</style>
+<body> 
+  <div class="container-fluid p-0">
+    <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+        <li data-target="#carousel" data-slide-to="5"></li>
+        <li data-target="#carousel" data-slide-to="6"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+
+        <div class="carousel-item active fresherintro">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">FRESHERS' INTRO 2021</h2>
+                  <p class="animated fadeInRight">We conducted Online Freshers Introduction for the 2024
+                    batch.</p>
+                  <!-- <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ss7">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">SUCCESS STORIES</h2>
+                  <p class="animated fadeInRight">Here we interview the students with notable achievements
+                    in his/her field of interest. We believe that students can connect easily to those of
+                    their age group and therefore the journey of one of them SUCCESS STORIES has become
+                    a very popular and is inspiring the lot.</p>
+                  <!-- <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item nitdgp">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">MR. & MISS NIT DGP</h2>
+                  <p class="animated fadeInRight">MR & MISS NIT-DGP is one of the the most popular event
+                    during RECSTACY (NIT Durgapur's Cultural Fest) where people participate in huge numbers
+                    with extravagant enthusiasm. Winners of this event are selected through various
+                    fun rounds.</p>
+                  <!-- <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item matkifod">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">MATKI FOD</h2>
+                  <p class="animated fadeInRight">MATKI FOD was a fun and interactive event conducted on
+                    the auspicious occasion of the festival of Janmashtami with a thought to relive the
+                    famous ‘matki fod’ event held nationwide in the college campus on Janmashtami with
+                    participation
+                    of around 300+ college students.</p>
+                  <!-- <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item shaamenoor">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">SHAAM-E-NOOR</h2>
+                  <p class="animated fadeInRight" id="sizechange">This year’s
+                    SHAAM-E-NOOR was on different hues of Diwali celebration.Flowers and rangolis, diyas and
+                    fairylights, crackers and fireworks, celebration and happiness all around. Pictures, selfies, posts and uploading stories becomes an
+                    integral part around the each decorated corners
+                    during Diwali so we posted participant’s entries on our Instagram and FB page.
+                    SHAAM-E-NOOR is well received by the participants. A total of 130 Entries across 58
+                    Institutions were made for 2nd edition of SHAAM-E-NOOR.</p>
+                  <!-- <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item redfmcollab">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">RED FM COLLAB</h2>
+                  <p class="animated fadeInRight">RADIO NITroz in collaboration with RED FM 93.5 had
+                    organised "College Ke Tashanbaaz", an offline event where the students were allowed to
+                    showcase their talents in any field of interest like dancing, singing, comedy, poetry,
+                    etc. The event was very successful with a huge participation.</p>
+                  <!-- <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item videokahinka">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft"> VIDEO KAHINKA</h2>
+                  <p class="animated fadeInRight">VIDEO KAHINKA is one such venture where you can find
+                    these humorous videos. In VIDEO KAHINKA we tried knowing the basic public opinion about
+                    various stuffs related to our college, and guess what, we came across very interesting
+                    answers!!</p>
+                  <!-- <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+ 
+</body>
+</html>
+
