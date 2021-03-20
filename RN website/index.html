@@ -37,15 +37,14 @@ padding: 0!important; scroll-behavior: smooth!important;">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
-
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0">
+            crossorigin = "anonymous" ></script>
     <link rel="stylesheet" href="more.css">
     <script>
-        function hideLoader() {
+            function hideLoader() {
 
-            $('#loading').addClass("hide");
-        }
+                $('#loading').addClass("hide");
+            }
 
         setTimeout(hideLoader, 2 * 1000);
         $(window).on('load', function () {
@@ -57,44 +56,61 @@ padding: 0!important; scroll-behavior: smooth!important;">
     <script src="https://kit.fontawesome.com/958e55d843.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50"
-    style="background-color: #203647; text-decoration-color: #203647;">
-    <div id="loading"></div>
-    <css-doodle grid="5" class="doodle">
-        :doodle { @grid: 5/ 100vmax; } background: @pick(#ffadad, #FDD835, #b3fffb, #fff, #a0c4ff, #bdb2ff, #9bf6ff);
-        opacity: @r(.9); clip-path: polygon( @rand(50%) 0, 50% @rand(70%), 0 @rand(100%) ); animation: test infinite
-        @r(100s, 150s) linear; @keyframes
-        test { 0% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(@r(-500%, 1000%), @r(-500%, 1000%),
-        0); } 100% { transform: translate3d(0, 0, 0); } }
-    </css-doodle>
-    <section id="title">
-        <div class="card border-0">
-            <img class="img-fluid w-100 p-0" src="./images/bg/rn.jpg">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #203647;" text-decoration-color:
+    #203647;" onload="myFunction()">
+
+
+    <div id="loading">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+
+    <div class="header">
+        <div class="card border-0 ">
             <div class="card-body text-white rgba-black-strong  p-2">
-                RADIO NITROZ
+                <div class="box">
+                    RADIO NITROZ
+                    <br>
+                    <span>Masti Ka Dozz</span>
+
+                    <div>
+                        <a class="nav-link page-scroll brand-logo " style="color: #b3fffb!important; font-size: 40px!important;     width: 68px;
+                        margin: 85px auto 0px auto;" href="#about"><i class="far fa-arrow-alt-circle-down"></i></a>
+                    </div>
+                </div>
+
             </div>
+            <!-- <img class="img-fluid w-100 p-0" src="./images/bg/rn.jpg"> -->
+
         </div>
 
         <div class="container-fluid "
             style="background: url(Renderfinal.mp4);  background-repeat: no-repeat;  background-position:center!important;width: 100%; ">
         </div>
-
+    </div>
+    <section id="title">
         <!-- for new navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div style="padding: 40px;" class="replace"></div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand navbar-brand navbar-custom rnlogo page-scroll" href="./index.html"><img
-                        class="logo" src="images/logo/rnlogowhite.png" style="height:80px; width:auto; "></a>
-                <button class="navbar-toggler" type="button" style="border: 1px solid white;" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        class="logo" src="images/logo/rnlogowhite.png" style="height:48px; width:auto; "></a>
+
+                <button class="navbar-toggler" type="button" style="border: 1px solid white;" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span style="border: 1px solid white; width: 80%;"></span>
                     <span style="border: 1px solid white; width: 80%;"></span>
                     <span style="border: 1px solid white; width: 80%;"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link page-scroll brand-logo"
+                            <a class="nav-link page-scroll brand-logo "
                                 style="color: #b3fffb!important; font-size: 2em!important;" href="#about">ABOUT US</a>
                         </li>
                         <li class="nav-item">
@@ -102,12 +118,12 @@ padding: 0!important; scroll-behavior: smooth!important;">
                                 style="color: #b3fffb!important; font-size: 2em!important;">EVENTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll brand-logo" href="/RN-webpage/RN website/team.html"
+                            <a class="nav-link page-scroll brand-logo" href="team.html"
                                 style="color: #b3fffb!important; font-size: 2em!important;">TEAM</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link page-scroll brand-logo" href="#contactUs"
-                                style="color: #b3fffb!important; font-size: 2em!important;">Contact Us</a>
+                                style="color: #b3fffb!important; font-size: 2em!important;">CONTACT US</a>
                         </li>
 
                     </ul>
@@ -174,7 +190,7 @@ padding: 0!important; scroll-behavior: smooth!important;">
             </div>
 
         </nav> -->
-
+        <!-- qeb-cxhh-srf -->
         </div>
     </section>
 
@@ -211,7 +227,7 @@ padding: 0!important; scroll-behavior: smooth!important;">
                 </p>
 
                 <div id="event-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <ol class="carousel-indicators">
+                    <!-- <ol class="carousel-indicators">
                         <li class="prev" data-target="#event-carousel" data-slide-to="0" class="active"></li>
                         <li class="next" data-target="#event-carousel" data-slide-to="1"></li>
                         <li class="next" data-target="#event-carousel" data-slide-to="2"></li>
@@ -219,9 +235,10 @@ padding: 0!important; scroll-behavior: smooth!important;">
                         <li class="next" data-target="#event-carousel" data-slide-to="4"></li>
                         <li class="next" data-target="#event-carousel" data-slide-to="5"></li>
                         <li class="next" data-target="#event-carousel" data-slide-to="6"></li>
-                    </ol>
+                    </ol> -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-toggle="modal" data-target="#fresher">
+                        <iframe src="event.html" frameborder="0" class="eventpics"></iframe>
+                        <!-- <div class="carousel-item active" data-toggle="modal" data-target="#fresher">
 
 
 
@@ -293,27 +310,34 @@ padding: 0!important; scroll-behavior: smooth!important;">
                                 answers!!
                             </p>
                             <img class="tt-img" src="images/events/videokahinka.jpg" alt="">
-                        </div>
+                        </div> -->
 
                     </div>
-                    <a class="carousel-control-prev" href="#event-carousel" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#event-carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
                     <a class="carousel-control-next" href="#event-carousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="extra-events">
-                    <h1 style="margin-bottom: 18px!important;">Other Ventures</h1>
-                    <div class="row event-row">
+
+                    <h1 style="margin-bottom: 18px!important; margin-top: 45px;">Videos and Podcasts</h1>
+                    <div>
+                        <iframe src="other.html" frameborder="0" class="eventpics"></iframe>
+
+                    </div>
+
+                    <div class="row event-row gridbox">
                         <!-- modals buttons -->
-                        <button class="col model-open" data-modal="modal-RN-JUKEBOX">
+
+                        <!-- <button class="col model-open" id="try" data-modal="modal-RN-JUKEBOX">
                             <div class="card shadow p-3 mb-5 rounded">
                                 <img src="images/events/jukebox.jpg" class="card-img-top" alt="...">
                                 <h3>RN JUKEBOX</h3>
                             </div>
                         </button>
-
+                        
                         <button class="col model-open" data-modal="modal-KHOL-E-DIL">
                             <div class="card shadow p-3 mb-5 rounded">
                                 <img src="images/events/kholedil.jpg" class="card-img-top" alt="...">
@@ -334,33 +358,6 @@ padding: 0!important; scroll-behavior: smooth!important;">
                                 <h3>FUNTASTIC</h3>
                             </div>
                         </button>
-                    </div>
-
-                    <!-- modals starts -->
-                    <div class="modalbox">
-                        <div class="modal" id="modal-RN-JUKEBOX"></div>
-
-                        <div class="modal" id="modal-KHOL-E-DIL"></div>
-
-                        <div id="modal-PRANKS" class="modal"></div>
-
-                        <div id="modal-FUNTASTIC" class="modal"></div>
-
-                        <div id="modal-DIL-KI-EK-DIARY-SE" class="modal">
-                            
-                        </div>
-                        <div id="modal-SHORT-FILMS" class="modal">
-                            
-                        </div>
-                        <div id="modal-MEMERANTINE" class="modal"></div>
-
-                        <div id="modal-MOVIE-MYSTICS" class="modal"></div>
-                    </div>
-
-
-                    <!-- modal ends -->
-
-                    <div class="row event-row">
                         <button class="col model-open" data-modal="modal-MOVIE-MYSTICS">
                             <div class="card shadow p-3 mb-5 rounded">
                                 <img src="images/events/moviemystics.jpg" class="card-img-top" alt="...">
@@ -388,13 +385,43 @@ padding: 0!important; scroll-behavior: smooth!important;">
                                 <h3>DIL KI EK DIARY SE</h3>
                             </div>
                         </button>
+                    </div> -->
+
+                        <!-- modals starts -->
+                        <!-- <div class="modalbox">
+                        <div class="modal" id="modalRNJUKEBOX">
+                            
+                        </div>
+
+                        <div class="modal" id="modal-KHOL-E-DIL"></div>
+
+                        <div id="modal-PRANKS" class="modal"></div>
+
+                        <div id="modal-FUNTASTIC" class="modal"></div>
+
+                        <div id="modal-DIL-KI-EK-DIARY-SE" class="modal">
+                            
+                        </div>
+                        <div id="modal-SHORT-FILMS" class="modal">
+
+                        </div>
+                        <div id="modal-MEMERANTINE" class="modal"></div>
+
+                        <div id="modal-MOVIE-MYSTICS" class="modal"></div>
+                    </div> -->
+
+
+                        <!-- modal ends -->
+
+                        <div class="row event-row">
+
+                        </div>
                     </div>
+
+
+
                 </div>
-
-
-
             </div>
-        </div>
     </section>
 
     <section id="contactUs">
@@ -414,7 +441,9 @@ padding: 0!important; scroll-behavior: smooth!important;">
                                 class="form-item"></textarea>
                         </div>
                     </div>
-                    <button type="button" class="btn sendbtn btn-success">Send Message</button>
+                    <button type="button" class="nav-link page-scroll brand-logo btn sendbtn btn-success"
+                        style="background-color: transparent; border-color:#b3fffb ; margin: auto;">Send
+                        Message</button>
                 </form>
             </div>
 
@@ -427,7 +456,7 @@ padding: 0!important; scroll-behavior: smooth!important;">
 
         <div class="social-media">
             <a class="nav-link page-scroll brand-logo" href="https://www.facebook.com/radio.nitroz.nitdgp"><i
-                    class="fab fa-facebook-f" style="font-size: 2em;   color:#b3fffb "></i></a></a>
+                    class="fab fa-facebook-f" style="font-size: 2em; color:#b3fffb "></i></a></a>
             <a class="nav-link page-scroll brand-logo"
                 href="https://instagram.com/radionitroz_nitdgp?igshid=1pu6b8o84z66h"><i class="fab fa-instagram"
                     style="font-size: 2em; color:#b3fffb"></i></a></a>
@@ -444,6 +473,7 @@ padding: 0!important; scroll-behavior: smooth!important;">
 
     <script src="index.js"></script>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
+
 
 </body>
 
