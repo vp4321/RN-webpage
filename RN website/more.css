@@ -170,12 +170,23 @@ section{
     box-shadow: -4px -4px 10px rgb(255 255 255), inset 4px 4px 10px rgb(0 0 0 / 5%), inset -4px -4px 10px rgb(255 255 255), inset 4px 4px 10px rgb(0 0 0 / 5%);
 }
 
-.row .col h1{
+/* .row .col h1{
     border-left: 3px solid #b3fffb;
-    border-right: 3px solid #b3fffb;
-    border-radius: 8px;
-}
+    border-right: 3px solid #;
 
+} */
+    /* .row .col div{
+        height: ;
+    } */
+/* .row .col h1:after {
+    content: "";
+    position:absolute;
+    margin:-20px;
+    width:40px;
+    height:40px;
+    border-radius: 50%; 
+    box-shadow: 0 0 0 250px #b3fffb;
+} */
 .social-media{
     display: flex;
     width: fit-content;
@@ -200,6 +211,9 @@ section{
 
 
 @media only screen and (min-width: 1100px) {
+    .other{
+        height: 600px;
+    }
     .navbar-nav {
         position: absolute;
         right: 10px;
@@ -210,7 +224,7 @@ section{
         margin-bottom: 120px;
     }
     .card>.card-body .box{
-        border-left: 15px solid white;
+        border-left: 20px solid rgb(179, 255, 251);
         width: fit-content;
         margin: auto;
         padding-left: 20px;
@@ -237,7 +251,7 @@ section{
         width: 80%;
     }
     .card>.card-body .box{
-        border-left: 15px solid white;
+        border-left: 15px solid rgb(179, 255, 251);
         width: fit-content;
         margin: auto;
         padding-left: 20px;
@@ -278,7 +292,7 @@ section{
         margin-top: 115rem;
     }
     .card>.card-body .box{
-        border-left: 15px solid white;
+        border-left: 15px solid rgb(179, 255, 251);
         width: fit-content;
         margin: auto;
         padding-left: 20px;
@@ -286,7 +300,7 @@ section{
         border-radius: 5px;
         height: 11rem;
     }
-  }
+}
 
 @media only screen and (max-width: 770px) {
     .maingroup{
@@ -316,7 +330,7 @@ section{
         margin-top: 100rem;
     }
     .card>.card-body .box{
-        border-left: 15px solid white;
+        border-left: 15px solid rgb(179, 255, 251);
         width: fit-content;
         margin: auto;
         padding-left: 20px;
@@ -366,7 +380,7 @@ section{
         font-size: 20px;
     }
     .card>.card-body .box{
-        border-left: 7px solid white;
+        border-left: 10px solid rgb(179, 255, 251);
         width: fit-content;
         margin: auto;
         padding-left: 20px;

@@ -44,7 +44,6 @@
     #Team {
         margin-top: 120px;
     }
-    
 </style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50"
@@ -109,7 +108,7 @@
         <div class="container teammembers gradient-border col" style="height: 800px;">
             <div class="row">
                 <div class="col text-center">
-                    <h1 style=" padding-top: 12px!important;"><b>RADIO NITROZ TEAM</b></h1>
+                    <h1 style=" padding-top: 12px!important;" data-aos="fade-up"><b>RADIO NITROZ TEAM</b></h1>
                     <br>
                 </div>
             </div>
@@ -309,7 +308,8 @@
                                         class="fa fa-envelope social"></i></a>
                                 <a class="social" href="tel:9831417775"><i class="fa fa-phone social"></i></a>
                             </ul>
-                            <h4><b>Vedang Pancholi</b><span style="display: block;">Web Developer, Photographer, <br>Event
+                            <h4><b>Vedang Pancholi</b><span style="display: block;">Web Developer, Photographer,
+                                    <br>Event
                                     Management</span></h4>
                         </div>
                     </div>
@@ -655,7 +655,8 @@
             <a class="nav-link page-scroll brand-logo" href="https://www.facebook.com/radio.nitroz.nitdgp">
                 <i class="fa fa-facebook" aria-hidden="true" style="font-size: 2em; color:#b3fffb "></i>
             </a>
-            <a class="nav-link page-scroll brand-logo" href="https://instagram.com/radionitroz_nitdgp?igshid=1pu6b8o84z66h">
+            <a class="nav-link page-scroll brand-logo"
+                href="https://instagram.com/radionitroz_nitdgp?igshid=1pu6b8o84z66h">
                 <i class="fa fa-instagram" aria-hidden="true" style="font-size: 2em; color:#b3fffb "></i>
             </a>
             <a class="nav-link page-scroll brand-logo" href="mailto:radionitroz.nitdgp@gmail.com ">
@@ -674,11 +675,38 @@
         function myteamFunction() {
             setTimeout(() => {
                 preloaders.style.display = "none"
-            }, 2000)
+            }, 0)
         };
 
     </script>
     <!-- <script src="index.js"></script> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const navlink = document.querySelectorAll('.nav-link.size')
+        const fade = document.querySelectorAll('.fade')
+        for (let i = 0; i < navlink.length; i++) {
+            const element = navlink[i];
+            const element2 = fade[i]
+            element.addEventListener('click', () => {
+                const card = element2.children
+                for (let j = 0; j < card.length; j++) {
+                    const cards = card[j];
+                    cards.classList.add('galleryImg')
+                    setTimeout(() => {
+                        cards.classList.remove('galleryImg')
+                    }, 1200);
+                }
+            })
+        }
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</body>
 </body>
 
 </html>

@@ -1,134 +1,176 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Responsive Hero Slider With Bootstrap 4</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Responsive Hero Slider With Bootstrap 4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Architects Daughter', cursive!important;
-  
-}
-body {
-  background: #eee;
-  min-height: 100vh;
-  width:100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-}  
-#carousel .carousel-item.fresherintro{
-  background-image:url("images/carousel/fresherintro.jpg");
-}
-#carousel .carousel-item.ss7{
-  background-image:url("images/carousel/ss7.jpg");
-}
-#carousel .carousel-item.nitdgp{
-  background-image:url("images/events/nitdgp.jpg");
-}
-#carousel .carousel-item.matkifod{
-  background-image:url("images/events/matkifod.jpg");
-}
-#carousel .carousel-item.shaamenoor{
-  background-image:url("images/events/shaamenoor.jpg");
-}
-#carousel .carousel-item.redfmcollab{
-  background-image:url("images/events/redfmcollab.jpg");
-}
-#carousel .carousel-item.videokahinka{
-  background-image:url("images/events/videokahinka.jpg");
-}
-#carousel .carousel-item{
-  height:100vh;
-  width:100%;
-  min-height:350px;
-  background:no-repeat center center scroll;
-  background-size:cover;
-}
-#carousel .carousel-inner .carousel-item{
-  transition:-webkit-transform 2s ease;
-  transition:transform 2s ease;
-  transition:transform 2s ease, -webkit-transform 2s ease;
-}
-#carousel .carousel-item .caption{
-  background:rgba(0,0,0,0.5);
-  padding:40px;
-  color:white;
-  animation-duration: 1s;
-  animation-delay: 2s;
-}
-#carousel .caption h2{
-  animation-duration: 1s;
-  animation-delay: 2s;
-}
-#carousel .caption p{
-  animation-duration: 1s;
-  animation-delay: 2.2s;
-  /* font-size: 16px; */
-  text-align: justify;
-}
 
-#carousel .caption a{
-  animation-duration: 1s;
-  animation-delay: 2.4s;
-}
-.delicious-btn{
-  display: inline-block;
-  min-width:160px;
-  height:60px;
-  color:#fff;
-  border:none;
-  border-left:3px solid #1c8314;
-  border-radius: 0;
-  padding:0 30px;
-  font-size:16px;
-  line-height:58px;
-  font-weight:600;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  text-transform: capitalize;
-  background:#40ba37;
-}
-.delicious-btn:hover,
-.delicious-btn:active,
-.delicious-btn:focus{
-  font-size:16px;
-  font-weight: 600;
-  color:#fff;
-  background:#1c8314;
-  border-color:#40ba37
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive !important;
 
-@media only screen and (max-width: 400px) {
-  #carousel .caption p{
-  animation-duration: 1s;
-  animation-delay: 2.2s;
-  font-size: 12px!important;
-}
-#carousel .carousel-item{
-  height:100vh;
-  width:100%;
-  min-height:400px;
-  background:no-repeat center center scroll;
-  background-size:cover;
-}
-#sizechange{
-  font-size: 12px;
-}
-}
+  }
 
-  
+  body {
+    background: transparent !important;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #carousel .carousel-item.fresherintro {
+    background-image: url("images/carousel/fresherintro.jpg");
+    background-size: 100% auto;
+  }
+
+  #carousel .carousel-item.ss7 {
+    background-image: url("images/carousel/ss7.jpg");
+    background-size: 100% auto;
+  }
+
+  #carousel .carousel-item.nitdgp {
+    background-image: url("images/events/nitdgp.jpg");
+    background-size: 100% auto;
+  }
+
+  #carousel .carousel-item.matkifod {
+    background-image: url("images/events/matkifod.jpg");
+    background-size: 100% auto;
+  }
+
+  #carousel .carousel-item.shaamenoor {
+    background-image: url("images/events/shaamenoor.jpg");
+    background-size: 100% auto;
+  }
+
+  #carousel .carousel-item.redfmcollab {
+    background-image: url("images/events/redfmcollab.jpg");
+    background-size: 100% auto;
+  }
+
+  #carousel .carousel-item.videokahinka {
+    background-image: url("images/events/videokahinka.jpg");
+    background-size: 100% auto;
+  }
+
+  #carousel .carousel-item {
+    height: 100vh;
+    width: 100%;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+  }
+
+  #carousel .carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
+
+  #carousel .carousel-item .caption {
+    background: rgba(0, 0, 0, 0.5);
+    height: min-content;
+    padding: 40px;
+    color: white;
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+
+  #carousel .caption h2 {
+    font-size: 4vw;
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+
+  #carousel .caption p {
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+    /* font-size: 16px; */
+    text-align: justify;
+  }
+
+  #carousel .caption a {
+    animation-duration: 1s;
+    animation-delay: 2.4s;
+  }
+
+  .delicious-btn {
+    display: inline-block;
+    min-width: 160px;
+    height: 60px;
+    color: #fff;
+    border: none;
+    border-left: 3px solid #1c8314;
+    border-radius: 0;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 58px;
+    font-weight: 600;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    background: #40ba37;
+  }
+
+  .delicious-btn:hover,
+  .delicious-btn:active,
+  .delicious-btn:focus {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #1c8314;
+    border-color: #40ba37
+  }
+
+  #carousel img {}
+
+  @media only screen and (max-width: 400px) {
+    #carousel .caption p {
+      animation-duration: 1s;
+      animation-delay: 2.2s;
+      font-size: 8px!important;
+    }
+    @media only screen and (min-width: 1100px) {
+      #carousel .carousel-item .caption {
+        margin-left: 20px;
+      }
+    #carousel .caption p {
+
+      animation-duration: 1s;
+      animation-delay: 2.2s;
+      font-size: 13px!important;
+    }
+
+    #carousel .carousel-item {
+      height: 100vh;
+      width: 100%;
+      min-height: 400px;
+      background: no-repeat center center scroll;
+      background-size: cover;
+    }
+
+    #sizechange {
+      font-size: 12px;
+    }
+  }
 </style>
-<body> 
+
+<body>
   <div class="container-fluid p-0">
     <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -213,7 +255,8 @@ body {
                   <h2 class="animated fadeInLeft">SHAAM-E-NOOR</h2>
                   <p class="animated fadeInRight" id="sizechange">This year’s
                     SHAAM-E-NOOR was on different hues of Diwali celebration.Flowers and rangolis, diyas and
-                    fairylights, crackers and fireworks, celebration and happiness all around. Pictures, selfies, posts and uploading stories becomes an
+                    fairylights, crackers and fireworks, celebration and happiness all around. Pictures, selfies, posts
+                    and uploading stories becomes an
                     integral part around the each decorated corners
                     during Diwali so we posted participant’s entries on our Instagram and FB page.
                     SHAAM-E-NOOR is well received by the participants. A total of 130 Entries across 58
@@ -267,14 +310,21 @@ body {
         <span class="sr-only">Next</span>
       </a>
     </div>
-</div>
+  </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
- 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript"
+    scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+
 </body>
-</html>
 
+</html>

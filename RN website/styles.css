@@ -36,6 +36,8 @@ body {
 
 
 } */
+@media only screen and (min-width: 1100px){
+}
 
 .card>.card-body {
     font-size: 70px;
@@ -97,7 +99,7 @@ p {
     font-family: 'Alegyra Sans', 'Alegyra Sans MT', Calibri, sans-serif;
     text-align: justify;
     color: white!important;
-    padding: 30px;
+    padding: 20px;
 }
 
 .carousel-item p {
@@ -108,16 +110,17 @@ p {
 
 h1 {
     /* font-family: 'Orbitron', sans-serif!important; */
-    color: #D9b08c!important;
-    padding-bottom: 10px;
-    background-color: rgba(77, 168, 218, 0.4)!important;
+    /* background-color: rgba(77, 168, 218, 0.4)!important; 
+     border-left: 15px solid rgb(179, 255, 251)!important; */
     display: inline-flex;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding: 10px;
     color: #fff!important;
-    border-radius: 10px;
     font-size: 2rem!important;
     font-weight: 700;
+    border: 1.5px solid rgb(179, 255, 251);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 h3 {
@@ -126,7 +129,7 @@ h3 {
 }
 
 .gradient-border>h1 {
-    padding-top: 12px!important;
+    margin-top: 12px!important;
 }
 
 .gradient-border.teammembers {
@@ -298,8 +301,6 @@ p.position {
 }
 
 
-/* Animation as suggested by Ismail Ghallou */
-
 @keyframes glow {
     to {
         text-shadow: 0 0 4px #a3ffff, 0 0 8px #a3ffff, 0 0 12px #a3ffff, 0 0 16px #a3ffff, 0 0 20px #a3ffff, 0 0 24px #a3ffff, 0 0 28px #a3ffff;
@@ -431,6 +432,28 @@ p.cpy {
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
+}
+
+.card{
+    transform: all 3s ease;
+}
+.tab-pane .galleryImg {
+    animation: zoominoutsinglefeatured 1s 1;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        /* transform: scale(1,1); */
+        transform: rotateY(0deg);
+    }
+    50% {
+        /* transform: scale(1.2,1.2); */
+        transform: rotateY(180deg);
+    }
+    100% {
+        /* transform: scale(1,1); */
+        transform: rotateY(360deg);
+    }
 }
 
 .glass {
